@@ -1,0 +1,176 @@
+//compress: true
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+    color: #000;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    vertical-align: top;
+}
+
+button {
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+}
+
+ul,ol,li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input,textarea {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: inherit;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+//-----------------------------//
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media(max-width:1200px) {
+        max-width: 991px;
+    }
+     @media(max-width:991px) {
+        max-width: 768px;
+    }
+    @media(max-width:767px) {
+        max-width: none;
+    }
+}
+
+.section {
+    margin-top: 130px;
+
+    @media(max-width:767px) {
+        margin-top: 100px;
+    }
+    @media(max-width:480px) {
+        margin-top: 70px;
+    }
+}
+
+
+.title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    margin-bottom: 92px;
+
+    @media(max-width:776px) {
+        margin-bottom: 50px;
+    }
+
+    @media(max-width:480px) {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    @media(max-width:400px) {
+        font-size: 30px;
+    }
+}
+
+.related__title {
+    margin-bottom: 67px;
+
+    @media(max-width:776px) {
+        margin-bottom: 50px;
+    }
+
+    @media(max-width:480px) {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    @media(max-width:400px) {
+        font-size: 30px;
+    }
+}
+
+.button {
+    background: #6E9C9F;
+    color: #fff;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 138.9%;
+    cursor: pointer;
+    width: 243px;
+    height: 68px;
+    transition: .5s ease;
+
+     &:hover {
+        background-color: #509498;
+    }
+}
+
+
+
+
+//------blocks-------//
+
+@import "blocks/header.less";
+@import "blocks/intro.less";
+@import "blocks/collection.less";
+@import "blocks/importance.less";
+@import "blocks/dreamteam.less";
+@import "blocks/footer.less";
+@import "blocks/page.less";
+@import "blocks/goods.less";
+@import "blocks/about.less";
+@import "blocks/map.less";
+@import "blocks/form.less";
+@import "blocks/sweetshot.less";
+@import "blocks/related.less";

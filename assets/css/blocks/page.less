@@ -1,0 +1,51 @@
+//main: ../styles.less
+
+.page {
+    padding-top: 269px;
+    padding-bottom: 214px;
+}
+
+.page-intro {
+    padding-top: 0;
+    height: 100%;
+    &:before {
+        content: none;
+    }
+}
+
+.item__page {
+    padding-top: 189px;
+    padding-bottom: 102px;
+}
+
+.page__title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 110%;
+    margin-bottom: 26px;
+}
+
+.page__subtitle {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+
+    & span {
+        color: #919191
+    }
+}
+
+@media(max-width:991px) {
+    .page {
+        padding-top: 200px;
+        padding-bottom: 150px;
+    }
+}
+
+
+@media(max-width:600px) {
+     .page {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+}

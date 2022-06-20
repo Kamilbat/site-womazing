@@ -1,0 +1,71 @@
+//main: ../styles.less
+
+.goods {
+    margin-bottom: 100px;
+}
+
+.goods__buttons {
+    display: flex;
+    margin-bottom: 92px;
+}
+
+.goods__button {
+    margin-right: 10px;
+    width: 162px;
+    height: 62px;
+    border: 1px solid #000000;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    transition: .5s ease;
+    cursor: pointer;
+
+    &.active {
+        background-color: #000;
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+.goods__subtitle {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    color: #808080;
+    margin-bottom: 65px;
+}
+
+.goods__subtitle--margin {
+    margin-bottom: 0;
+}
+
+@media(max-width:991px) {
+    .goods {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width:600px) {
+    .goods__buttons {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    .goods__button {
+        margin-bottom: 15px;
+    }
+
+    .goods__subtitle {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:373px) {
+    .goods__buttons {
+        justify-content: center;
+    }
+}

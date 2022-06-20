@@ -1,0 +1,74 @@
+//main: ../styles.less
+
+.about__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(322px, 1fr));
+    grid-column-gap: 94px;
+    grid-row-gap: 130px;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.about__photo img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.about__subtitle {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 140%;
+    margin-bottom: 46px;
+}
+
+.about__text {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+}
+
+.about__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 260px;
+    height: 68px;
+}
+
+@media(max-width:767px) {
+    .about__grid {
+        grid-template-columns: .15fr .7fr .15fr;
+        grid-template-rows: repeat(4,auto);
+        justify-content: center;
+        grid-row-gap: 50px;
+        grid-column-gap: 0;
+    }
+
+    .about__photo {
+        grid-column: 2;
+    }
+
+    .about__photo--2 {
+        grid-row: 3;
+    }
+
+    .about__content {
+        grid-column: span 3;
+    }
+}
+
+@media(max-width:480px) {
+    .about__grid {
+        margin-bottom: 50px;
+    }
+
+    .about__photo {
+        grid-column:span 3;
+    }
+
+    .about__subtitle {
+        margin-bottom: 20px;
+    }
+}
